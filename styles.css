@@ -54,27 +54,21 @@ section {
 
 .promotion {
     background-image: url(promotion.jpg);
-    background-size: contain;
+    background-attachment: scroll;
 }
 
 .promotion p {
-    color: #1b1b1b;
+    color: #f9f9f9;
     text-align: center;
     font-size: 35px;
     font-weight: bold;
-    text-shadow: 0 0 5px #fff5ee,
-                 0 0 10px #fff5ee,
-                 0 0 15px #f9f9f9,
-                 0 0 20px #f9f9f9;
-    margin-top: 5em;
+    text-shadow: 0 0 5px #fff5ee;
+    margin-top: 1em;
 }
 
 .promotion h1 {
     text-align: center;
-    text-shadow: 0 0 5px #1b1b1b,
-            0 0 10px #1b1b1b,
-            0 0 15px #1b1b1b,
-            0 0 20px #1b1b1b;
+    text-shadow: 0 0 5px #fff5ee;
     animation: promotion 1.5s;
 }
 
