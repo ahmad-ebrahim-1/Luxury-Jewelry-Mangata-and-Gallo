@@ -1,0 +1,152 @@
+body {
+    background-color: #1b1b1b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #f9f9f9;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #f9f9f9;
+}
+
+header > img {
+    width: 320px;
+    height: 32px;
+    display: block;
+    margin: 40px auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background-color: #f9f9f9;
+    height: 4rem;
+}
+
+nav a {
+    flex: 1;
+    font-size: 1.6rem;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: #1b1b1b;
+}
+
+nav a:hover {
+    box-shadow: 0 0 25px #1b1b1b;
+    transition: 0.5s;
+}
+
+section {
+    display: flex;
+    border-bottom: 1px solid #f9f9f9;
+    height: 400px;
+    margin: 10px;
+}
+
+.promotion {
+    background-image: url("/Diamonds+on+black.jpg");
+    background-size: cover;
+}
+
+.promotion p {
+    color: #1b1b1b;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #fff5ee,
+                 0 0 10px #fff5ee,
+                 0 0 15px #f9f9f9,
+                 0 0 20px #f9f9f9;
+    margin-top: 3em;
+}
+
+.promotion h1 {
+    text-align: center;
+    text-shadow: 0 0 5px #1b1b1b,
+            0 0 10px #1b1b1b,
+            0 0 15px #1b1b1b,
+            0 0 20px #1b1b1b;
+    animation: promotion 1.5s;
+}
+
+@keyframes promotion {
+    0% {
+        transform: scale(0);    
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1) rotateX(360deg);
+    }
+}
+
+article {
+    flex: 1;
+    margin: 5px;
+}
+
+.item h2 {
+    text-align: center;
+}
+
+.item img {
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.item p {
+    color: #fafad2;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#paragraph {
+    color: #fff5ee;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #fafad2;
+    transition: 1s;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+div img {
+    width: 120px;     
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 5px #f9f9f9;
+}
+
+div p {
+    color: #f9f9f9;
+    text-align: center;
+}
