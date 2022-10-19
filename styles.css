@@ -57,7 +57,7 @@ section {
 .promotion {
     flex-wrap: nowrap;
     height: 60vh;
-    background-image: url(promotion.jpg);
+    background-image: url(images/promotion.jpg);
     background-attachment: scroll;
     box-shadow: none;
     border-bottom: 1px solid #f9f9f9;
