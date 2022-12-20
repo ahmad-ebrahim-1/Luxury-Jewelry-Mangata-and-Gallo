@@ -1,18 +1,8 @@
-* {
-    font-family: serif;
-}
-
 body {
     background-color: #1b1b1b;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #f9f9f9;
 }
 
 h2 {
@@ -30,16 +20,9 @@ header > img {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     background-color: #f9f9f9;
-}
-
-nav img {
-    width: 5.5rem;
-    height: 5.5rem;
-    margin-right: 3rem;
-    border-radius: 50%;
 }
 
 nav ul {
@@ -59,13 +42,17 @@ nav a {
     margin: 0 2rem;
     text-decoration: none;
     color: #1b1b1b;
-    opacity: 0.79;
+    opacity: 0.8;
 }
 
-nav a:hover {
-    transition: 0.2s;
-    border-left: 3px solid #1b1b1b;
+li:hover a {
     opacity: 1;
+}
+
+li:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: 0.1s;
 }
 
 section {
@@ -77,32 +64,47 @@ section {
 .promotion {
     flex-wrap: nowrap;
     height: 60vh;
-    background-image: url(images/promotion.jpg);
-    background-attachment: scroll;
+    background-image: url(images/slide-01-artgold-jewelry-everett-16cbce42.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: none;
     border-bottom: 1px solid #f9f9f9;
 }
 
-.promotion p {
-    color: #f9f9f9;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-shadow: 0 0 3px #fff5ee;
+.promotion div {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.promotion h1 {
-    text-align: center;
-    text-shadow: 0 0 3px #fff5ee;
-}
-
-.promotion h1:hover {
+.promotion div p {
+    font-size: 3rem;
+    margin: 0 1rem;
     animation: promotion 1s;
+}
+
+.promotion div p:nth-child(1) {
+    animation-delay: 0.5s;
+}
+.promotion div p:nth-child(2) {
+    animation-delay: 1s;
+}
+.promotion div p:nth-child(3) {
+    animation-delay: 1.5s;
+}
+.promotion div p:nth-child(4) {
+    animation-delay: 2s;
 }
 
 @keyframes promotion {
     50% {
-        transform: scale(1.1);
+        transform: scale(1.3);
     }
     100% {
         transform: scale(1);
