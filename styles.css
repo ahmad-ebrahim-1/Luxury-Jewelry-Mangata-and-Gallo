@@ -49,7 +49,7 @@ nav a {
     margin: 0 2rem;
     text-decoration: none;
     color: #1b1b1b;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 li:hover a {
@@ -71,16 +71,17 @@ section {
 .promotion {
     flex-wrap: nowrap;
     height: 60vh;
-    background-image: url(images/slide-01-artgold-jewelry-everett-16cbce42.jpeg);
+    background-image: url(images/1920x650_rwrbbp.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: none;
     border-bottom: 1px solid #f9f9f9;
+    border-radius: 6px;
 }
 
 .promotion div {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     padding: 1rem;
     margin-top: 3rem;
